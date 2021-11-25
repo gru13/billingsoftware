@@ -1,0 +1,1 @@
+"root":"Data.xlsx",,sheets:{"data":{"SAREE NO":"A","Date":"B","Name":"C","Design":"D","Colours":"E","Purchase Amount":"F","DATE OF SALE":"G","SALE PRICE":"H"	,"CUSTOMER NAME":"I","CUSTOMER NUMBER":"K","ADDRESS":"L","BILL NO":"M"}}
