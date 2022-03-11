@@ -1,5 +1,5 @@
 from tkinter import *
-from openpyxl import *
+from openpyxl import load_workbook
 from datetime import datetime
 
 database = load_workbook("SAREE DATABASE.xlsx")
@@ -67,7 +67,7 @@ def bill_():
         database_sheet["K" + str(billed_saree[ab - 1][0] + 2)] = customer_address.get()
 
     Label(text=str(total)).grid(column=10, row=1000)
-    # print(billed_saree)
+    print(billed_saree)
     database.save("SAREE DATABASE.xlsx")
 
 
@@ -85,7 +85,7 @@ def saree_no():
     globals()[str(sno) + "price"].grid(column=3, row=5 + (len(billed_saree)))
     billed_saree.append([saree_number, colour, design])
 
-    # print(billed_saree)
+    print(billed_saree)
 
 
 #  buttons

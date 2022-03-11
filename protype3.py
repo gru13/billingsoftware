@@ -16,12 +16,12 @@ def main():
     total_database = workbook['total data in out']
     billing_database = workbook['billing contain']
     saree_num_list_all = [str(a.value) for a in total_database["A"] if a.value is not None]
-    # print(saree_num_list_all)
+    print(saree_num_list_all)
     saree_num_list_unsold = [str(a) for a in range(1, len(saree_num_list_all) + 1) if
                              total_database["G" + str(a + 1)].value is None]
     global saree_bought_by_customer
     saree_bought_by_customer = []
-    # print(saree_num_list_unsold)
+    print(saree_num_list_unsold)
     #
     bill_no = [a.value for a in billing_database["A"] if a.value != None]
     bill_no = bill_no[1:]
@@ -140,6 +140,5 @@ login = Entry(root, )
 login.bind("<Return>", logon_)
 login.grid(column=1, row=0)
 root.mainloop()
-# pip install pyinstaller
 # pyinstaller --onefile -w 'WORKING_PROTYPE_3_TEST.py'
 # pyinstaller --onefile -w "working_protype_2_test_model.py"
