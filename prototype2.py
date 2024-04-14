@@ -27,7 +27,7 @@ saree_no_list = [str(a) for a in sarees_detail["SAREE NUMBER"]]
 #
 customer_name = Entry(Win, relief="sunken", justify="center")
 customer_name.grid(column=1, row=1)
-#
+#   
 customer_number = Entry(Win, relief="sunken", justify="center")
 customer_number.grid(column=3, row=1)
 #
